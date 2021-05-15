@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/common/fonts.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <!-- <button class="dropdown-button"></button> -->
+    <ul class="navbar">
+      <li class="navbar-item navbar-logo">
+        <a href="/" class="navbar-item-link navbar-item-logo">Logo</a>
+      </li>
+      <button class="dropdown-button">
+        <img src="../images/menu.png" alt="menu">
+      </button>
+      <div class="navbar-position">
+        <li class="navbar-item">
+          <a href="" class="navbar-item-link" id="about-stone">About Stone</a>
+        </li>
+        <li class="navbar-item">
+          <a href="" class="navbar-item-link" id="lastest-project">Lastest Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a href="" class="navbar-item-link" id="contact">Contact</a>
+        </li>
+        <li class="navbar-item">
+          <a href="" class="navbar-item-link"><img id="insta" src="../images/instagram.png" alt="instagram"></a>
+        </li>
+      </div>
+    </ul>
+    <div class="overlay" id="navbarBackground">
+      <div class="overlay-content">
+        <a href="" class="overlay-content-link" id="about-stone">About Stone</a>
+        <a href="" class="overlay-content-link" id="lastest-project">Lastest Projects</a>
+        <a href="" class="overlay-content-link" id="contact">Contact</a>
+        <a href="" class="overlay-content-link"><img id="insta" src="../images/instagram.png" alt="instagram"></a>
+        <p class="overlay-content-footer">© 2021, Stone Design.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="../images/79 - 98WnOZE.jpg" style="width:100%">
+        <div class="text">© 2021, Stone Design.</div>
+        <button class="mySlides-btn">Restaurant name</button>
+      </div>
+      <div class="mySlides fade">
+        <img src="../images/66 - dAKSCI9.jpg" style="width:100%">
+        <div class="text">© 2021, Stone Design.</div>
+        <button class="mySlides-btn">Restaurant name</button>
+      </div>
+      <div class="mySlides fade">
+        <img src="../images/64 - dQMxRzX.jpg" style="width:100%">
+        <div class="text">© 2021, Stone Design.</div>
+        <button class="mySlides-btn">Restaurant name</button>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="content-mobile">
+      <div class="content-mobile-restaurant">
+        <img src="../images/79 - 98WnOZE.jpg" style="width:100%">
+        <button class="content-mobile-restaurant-btn">Restaurant name</button>
+      </div>
+      <div class="content-mobile-restaurant">
+        <img src="../images/64 - dQMxRzX.jpg" style="width:100%">
+        <button class="content-mobile-restaurant-btn">Restaurant name</button>
+      </div>
+      <div class="content-mobile-restaurant">
+        <img src="../images/66 - dAKSCI9.jpg" style="width:100%">
+        <button class="content-mobile-restaurant-btn">Restaurant name</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/slide-show.js"></script>
+</body>
+
+</html>

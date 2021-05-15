@@ -1,0 +1,23 @@
+@mixin restaurant-btn($bg, $bottom) {
+  position: absolute;
+  bottom: $bottom;
+  right: 0;
+  background-color: $bg;
+  padding: 11px 44px 12px 22px;
+  opacity: 0.82;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  &::before {
+    content: '';
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    position: absolute;
+    right: 16px;
+    top: 17px;
+    padding: 3.5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}
