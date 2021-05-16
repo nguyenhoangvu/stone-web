@@ -13,7 +13,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body id="bodyBackground">
+  <a class="closebtn" href="javascript:void(0)" &times></a>
   <div class="header">
     <ul class="navbar">
       <li class="navbar-item navbar-logo">
@@ -74,25 +75,63 @@
     </div>
     <div class="project-detail-image">
       <div class="column">
-        <img src="../images/66 - dAKSCI9.jpg" style="width:100%">
-        <img src="../images/Sample-jpg-image-500kb.jpg" style="width:100%">
-        <img src="../images/64 - dQMxRzX.jpg" style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/66 - dAKSCI9.jpg"
+          style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/Sample-jpg-image-500kb.jpg"
+          style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/64 - dQMxRzX.jpg"
+          style="width:100%">
       </div>
       <div class="column">
-        <img src="../images/Sample-jpg-image-500kb.jpg" style="width:100%">
-        <img src="../images/62 - 4b1EH3d.jpg" style="width:100%">
-        <img src="../images/66 - dAKSCI9.jpg" style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/Sample-jpg-image-500kb.jpg"
+          style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/62 - 4b1EH3d.jpg"
+          style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/66 - dAKSCI9.jpg"
+          style="width:100%">
       </div>
       <div class="column">
-        <img src="../images/66 - dAKSCI9.jpg" style="width:100%">
-        <img src="../images/Sample-jpg-image-500kb.jpg" style="width:100%">
-        <img src="../images/64 - dQMxRzX.jpg" style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/66 - dAKSCI9.jpg"
+          style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/Sample-jpg-image-500kb.jpg"
+          style="width:100%">
+        <img data-toggle="modal" data-target="#myModal" class="column-image" src="../images/64 - dQMxRzX.jpg"
+          style="width:100%">
+      </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="slideshow-container">
+              <div class="mySlides">
+                <img src="../images/79 - 98WnOZE.jpg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <img src="../images/66 - dAKSCI9.jpg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <img src="../images/64 - dQMxRzX.jpg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <img src="../images/64 - dQMxRzX.jpg" style="width:100%">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <script src="../js/navbar.js"></script>
-  <!-- <script src="../js/slide-show.js"></script> -->
+  <script src="../js/project-detail.js"></script>
+  <script src="../js/slide-show.js"></script>
 </body>
 
 </html>

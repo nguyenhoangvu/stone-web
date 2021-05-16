@@ -30,6 +30,7 @@ body, html {
 }
 .container .grid-btn {
   right: 11px !important;
+  cursor: pointer;
   position: absolute;
   bottom: 56px;
   right: 0;

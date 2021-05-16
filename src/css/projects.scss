@@ -19,6 +19,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
     }
     &-btn {
       right: 11px !important;
+      cursor: pointer;
       @include restaurant-btn(#a4b7c7, 56px)
     }
   }

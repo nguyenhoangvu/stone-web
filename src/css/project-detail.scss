@@ -1,6 +1,9 @@
 @import './common/fonts.css';
+@import './common/mixins';
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .project-detail {
@@ -64,6 +67,7 @@ html {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 0 4px;
+    cursor: pointer;
     @media screen and (max-width: 576px) {
       flex-direction: column;
       padding: 0;
@@ -90,6 +94,117 @@ html {
         width: 100%;
         @media screen and (max-width: 576px) {
           margin-top: 0;
+        }
+      }
+    }
+  }
+  .modal {
+    &-dialog {
+      width: 950px;
+      height: 693px;
+      margin: 209px auto;
+      @media screen and (max-width: 1120px) {
+        width: 650px;
+        height: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        width: calc(100vw - 140px);
+        height: 100%;
+      }
+      @media screen and (max-width: 576px) {
+        width: calc(100vw - 128px);
+        height: 100%;
+      }
+      .modal-content {
+        background-color: transparent;
+        .modal-header {
+          padding: 0;
+          border-bottom: none;
+          .close {
+            font-size: 50px;
+            color: #a4b7c7;
+            margin-right: -47px
+          }
+        }
+        .modal-body {
+          padding: 0;
+          .slideshow-container {
+            position: relative;
+            .mySlides {
+              display: none;
+              img {
+                vertical-align: middle;
+              }
+              .text {
+                color: #fff;
+                font-family: FuturaPT;
+                font-size: 12px;
+                margin-left: 19px;
+                position: absolute;
+                bottom: 20px;
+                line-height: 3.58;
+                letter-spacing: normal;
+              }
+              &-btn{
+                @include restaurant-btn(#a4b7c7, 56px)
+              }
+            }
+            
+            .prev {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              left: -58px;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: #a4b7c7;
+              font-weight: bold;
+              font-size: 45px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+
+            .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: #a4b7c7;
+              font-weight: bold;
+              font-size: 45px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+              right: -58px;
+              border-radius: 3px 0 0 3px;
+            }
+            
+            .prev:hover, .next:hover {
+              background-color: rgba(0,0,0,0.8);
+            }
+            
+            .active {
+              background-color: #717171;
+            }
+            
+            @media only screen and (max-width: 576px) {
+              .prev, .next {
+                font-size: 25px;
+                padding: 5px;
+                margin-top: -15px;
+              }
+              .prev {
+                left: -25px;
+              }
+              .next {
+                right: -25px;
+              }
+            }
+          }
         }
       }
     }
