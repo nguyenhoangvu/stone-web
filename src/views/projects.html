@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Effects for Grid Items | Demo 1</title>
+  <link rel="stylesheet" type="text/css" href="../css/projects.css" />
+  <link rel="stylesheet" href="../css/common/header.css">
+  <link rel="stylesheet" href="../css/common/fonts.css">
+  <script src="../js/modernizr.custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <!-- <button class="dropdown-button"></button> -->
+    <ul class="navbar">
+      <li class="navbar-item navbar-logo">
+        <a href="home.html" class="navbar-item-link navbar-item-logo">Logo</a>
+      </li>
+      <button class="dropdown-button">
+        <img src="../images/menu.png" alt="menu">
+      </button>
+      <div class="navbar-position">
+        <li class="navbar-item">
+          <a href="about.html" class="navbar-item-link" id="about-stone">About Stone</a>
+        </li>
+        <li class="navbar-item">
+          <a href="projects.html" class="navbar-item-link" id="lastest-project">Lastest Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a href="contact.html" class="navbar-item-link" id="contact">Contact</a>
+        </li>
+        <li class="navbar-item">
+          <a href="" class="navbar-item-link"><img id="insta" src="../images/instagram.png" alt="instagram"></a>
+        </li>
+      </div>
+    </ul>
+    <div class="overlay" id="navbarBackground">
+      <div class="overlay-content">
+        <a href="" class="overlay-content-link" id="about-stone">About Stone</a>
+        <a href="" class="overlay-content-link" id="lastest-project">Lastest Projects</a>
+        <a href="" class="overlay-content-link" id="contact">Contact</a>
+        <a href="" class="overlay-content-link"><img id="insta" src="../images/instagram.png" alt="instagram"></a>
+        <p class="overlay-content-footer">© 2021, Stone Design.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="grid effect-1" id="grid">
+      <li><img src="../images/Sample-jpg-image-500kb.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+
+    </ul>
+  </div>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/masonry.pkgd.min.js"></script>
+  <script src="../js/imagesloaded.js"></script>
+  <script src="../js/classie.js"></script>
+  <script src="../js/AnimOnScroll.js"></script>
+  <script>
+    new AnimOnScroll(document.getElementById('grid'), {
+      minDuration: 0.4,
+      maxDuration: 0.7,
+      viewportFactor: 0.2
+    });
+    $('.grid-btn').click(function () {
+      let index = $('.grid-btn').index(this)
+      location.href = "project-detail.html"
+    })
+  </script>
+</body>
+
+</html>

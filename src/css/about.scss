@@ -10,6 +10,9 @@ html {
   background-color: black;
   padding-top: 112px;
   padding-bottom: 118px;
+  @media only screen and (max-width: 992px) {
+    padding-top: 60px;
+  }
   @media only screen and (max-width: 768px) {
     padding: 26px 32px 31px 29px;
   }
@@ -39,6 +42,9 @@ html {
     color: #fff;
     @media only screen and (max-width: 1350px) {
       width: 100%;
+    }
+    @media only screen and (max-width: 992px) {
+      margin-top: 31px;
     }
     @media only screen and (max-width: 768px) {
       font-size: 16.5px;

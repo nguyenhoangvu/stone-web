@@ -9,6 +9,11 @@ html {
   padding-top: 112px;
   padding-bottom: 118px;
 }
+@media only screen and (max-width: 992px) {
+  .about-content {
+    padding-top: 60px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .about-content {
     padding: 26px 32px 31px 29px;
@@ -46,6 +51,11 @@ html {
 @media only screen and (max-width: 1350px) {
   .about-content-text {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-content-text {
+    margin-top: 31px;
   }
 }
 @media only screen and (max-width: 768px) {
