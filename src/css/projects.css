@@ -10,25 +10,29 @@ body, html {
   margin: 0;
 }
 
-.container {
+.projects .header .navbar .dropdown-button {
+  top: 26px;
+  transform: none;
+}
+.projects .container {
   background-color: black;
   padding-top: 10px;
   /* Effect 1: opacity */
 }
-.container .grid {
+.projects .container .grid {
   max-width: 98em;
   list-style: none;
   margin: 0 auto;
   padding: 0;
 }
-.container .grid li {
+.projects .container .grid li {
   display: block;
   float: left;
   padding: 11px;
   width: 33%;
   opacity: 0;
 }
-.container .grid-btn {
+.projects .container .grid-btn {
   right: 11px !important;
   cursor: pointer;
   position: absolute;
@@ -42,7 +46,7 @@ body, html {
   text-decoration: none;
   color: #fff;
 }
-.container .grid-btn::before {
+.projects .container .grid-btn::before {
   content: "";
   border: solid white;
   border-width: 0 2.5px 2.5px 0;
@@ -53,19 +57,19 @@ body, html {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-.container .grid li.shown,
-.container .no-js .grid li,
-.container .no-cssanimations .grid li {
+.projects .container .grid li.shown,
+.projects .container .no-js .grid li,
+.projects .container .no-cssanimations .grid li {
   opacity: 1;
 }
-.container .grid li a,
-.container .grid li img {
+.projects .container .grid li a,
+.projects .container .grid li img {
   outline: none;
   border: none;
   display: block;
   max-width: 100%;
 }
-.container .grid.effect-1 li.animate {
+.projects .container .grid.effect-1 li.animate {
   -webkit-animation: fadeIn 0.65s ease forwards;
   animation: fadeIn 0.65s ease forwards;
 }
@@ -80,12 +84,12 @@ body, html {
   }
 }
 @media screen and (max-width: 900px) {
-  .container .grid li {
+  .projects .container .grid li {
     width: 50%;
   }
 }
-@media screen and (max-width: 400px) {
-  .container .grid li {
+@media screen and (max-width: 576px) {
+  .projects .container .grid li {
     width: 100%;
   }
 }

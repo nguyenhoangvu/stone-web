@@ -9,31 +9,36 @@ html {
   padding-top: calc(100vw / 11.85);
   padding-bottom: calc(100vw / 11.22);
 }
-.contact-content .row {
+@media only screen and (width: 768px) {
+  .contact-content .container {
+    width: 100%;
+  }
+}
+.contact-content .container .row {
   display: flex;
 }
 @media only screen and (max-width: 768px) {
-  .contact-content .row {
+  .contact-content .container .row {
     flex-direction: column;
   }
 }
-.contact-content .row .col-md-6 {
+.contact-content .container .row .col-md-6 {
   margin-top: auto;
   margin-bottom: auto;
 }
 @media only screen and (max-width: 768px) {
-  .contact-content .row div:nth-of-type(1) {
+  .contact-content .container .row div:nth-of-type(1) {
     order: 2;
   }
 }
 @media only screen and (max-width: 768px) {
-  .contact-content .row div:nth-of-type(2) {
+  .contact-content .container .row div:nth-of-type(2) {
     order: 1;
   }
 }
 @media only screen and (min-width: 1700px) {
   .contact-content {
-    height: calc(100vh - 73px);
+    height: calc(100vh - 74px);
   }
 }
 @media only screen and (max-width: 768px) {

@@ -2,68 +2,78 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
-.container {
-  background-color: black;
-  padding-top: 10px;
-  .grid {
-    max-width: 98em;
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    li {
+.projects {
+  .header {
+    .navbar {
+      .dropdown-button {
+        top: 26px;
+        transform: none;
+      }
+    }
+  }
+  .container {
+    background-color: black;
+    padding-top: 10px;
+    .grid {
+      max-width: 98em;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      li {
+        display: block;
+        float: left;
+        padding: 11px;
+        width: 33%;
+        opacity: 0;
+      }
+      &-btn {
+        right: 11px !important;
+        cursor: pointer;
+        @include restaurant-btn(#a4b7c7, 56px)
+      }
+    }
+    
+    .grid li.shown,
+    .no-js .grid li,
+    .no-cssanimations .grid li {
+      opacity: 1;
+    }
+    
+    .grid li a,
+    .grid li img {
+      outline: none;
+      border: none;
       display: block;
-      float: left;
-      padding: 11px;
-      width: 33%;
-      opacity: 0;
+      max-width: 100%;
     }
-    &-btn {
-      right: 11px !important;
-      cursor: pointer;
-      @include restaurant-btn(#a4b7c7, 56px)
+    
+    /* Effect 1: opacity */
+    .grid.effect-1 li.animate {
+      -webkit-animation: fadeIn 0.65s ease forwards;
+      animation: fadeIn 0.65s ease forwards;
     }
-  }
-  
-  .grid li.shown,
-  .no-js .grid li,
-  .no-cssanimations .grid li {
-    opacity: 1;
-  }
-  
-  .grid li a,
-  .grid li img {
-    outline: none;
-    border: none;
-    display: block;
-    max-width: 100%;
-  }
-  
-  /* Effect 1: opacity */
-  .grid.effect-1 li.animate {
-    -webkit-animation: fadeIn 0.65s ease forwards;
-    animation: fadeIn 0.65s ease forwards;
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% { }
-    100% { opacity: 1; }
-  }
-  
-  @keyframes fadeIn {
-    0% { }
-    100% { opacity: 1; }
-  }
-  
-  @media screen and (max-width: 900px) {
-    .grid li {
-      width: 50%;
+    
+    @-webkit-keyframes fadeIn {
+      0% { }
+      100% { opacity: 1; }
     }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .grid li {
-      width: 100%;
+    
+    @keyframes fadeIn {
+      0% { }
+      100% { opacity: 1; }
     }
+    
+    @media screen and (max-width: 900px) {
+      .grid li {
+        width: 50%;
+      }
+    }
+    
+    @media screen and (max-width: 576px) {
+      .grid li {
+        width: 100%;
+      }
+    }
+    
   }
-  
 }
