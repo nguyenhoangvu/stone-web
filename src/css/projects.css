@@ -12,7 +12,6 @@ body, html {
 
 .container {
   background-color: black;
-  border-top: 1px solid white;
   padding-top: 10px;
   /* Effect 1: opacity */
 }

@@ -11,6 +11,12 @@
 }
 
 @font-face {
+  font-family: FuturaPT-light;
+  src: url('../../font/FuturaPTLight.otf');
+  font-weight: 300;
+}
+
+@font-face {
   font-family: Myriad;
   src: url('../../font/MYRIADPRO-REGULAR.OTF');
   font-weight: 500;

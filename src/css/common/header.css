@@ -1,5 +1,6 @@
 .header {
   background-color: black;
+  border-bottom: 1px solid #fff;
 }
 .header .navbar {
   list-style-type: none;

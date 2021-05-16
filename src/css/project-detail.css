@@ -1,0 +1,117 @@
+@import './common/fonts.css';
+html {
+  box-sizing: border-box;
+}
+
+.project-detail {
+  padding: 10px 10px 77px 10px;
+  background-color: black;
+}
+@media screen and (max-width: 576px) {
+  .project-detail {
+    padding: 0;
+  }
+}
+.project-detail-text {
+  max-width: 1092px;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .project-detail-text {
+    margin: 24px 31px 29px 28px;
+  }
+}
+.project-detail-text-restaurant-name {
+  font-family: FuturaPT-Demi;
+  font-size: 36px;
+  line-height: 1.19;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .project-detail-text-restaurant-name {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 1.79;
+  }
+}
+.project-detail-text-restaurant-address {
+  font-family: FuturaPT-Demi;
+  font-size: 36px;
+  line-height: 1.19;
+  text-align: center;
+  color: #97a7b4;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+@media screen and (max-width: 768px) {
+  .project-detail-text-restaurant-address {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+.project-detail-text-restaurant-discribe {
+  font-family: Myriad;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 38px;
+}
+@media screen and (max-width: 768px) {
+  .project-detail-text-restaurant-discribe {
+    font-family: FuturaPT-light;
+    margin-bottom: 29px;
+    font-weight: 300;
+  }
+}
+.project-detail-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+@media screen and (max-width: 576px) {
+  .project-detail-image {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.project-detail-image .column {
+  -ms-flex: 33.3%;
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+@media screen and (max-width: 800px) {
+  .project-detail-image .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .project-detail-image .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.project-detail-image .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .project-detail-image .column img {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=project-detail.css.map */
