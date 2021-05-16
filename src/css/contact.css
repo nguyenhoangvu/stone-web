@@ -1,0 +1,111 @@
+@import './common/fonts.css';
+html {
+  box-sizing: border-box;
+}
+
+.contact-content {
+  height: 100%;
+  border-top: 1px solid #fff;
+  background-color: black;
+  padding-top: calc(100vw / 11.85);
+  padding-bottom: calc(100vw / 11.22);
+}
+.contact-content .row {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .contact-content .row {
+    flex-direction: column;
+  }
+}
+.contact-content .row .col-md-6 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media only screen and (max-width: 768px) {
+  .contact-content .row div:nth-of-type(1) {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-content .row div:nth-of-type(2) {
+    order: 1;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .contact-content {
+    height: calc(100vh - 73px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-content {
+    padding: 51px 29px 44px 30px;
+  }
+}
+.contact-content-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: 450px;
+}
+@media only screen and (max-width: 992px) {
+  .contact-content-img {
+    width: 314px;
+    height: 314px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-content-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.contact-content-text {
+  width: 302px;
+}
+.contact-content-text-note {
+  font-family: FuturaPT-Demi;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #97a7b4;
+  margin-bottom: 29px;
+}
+@media only screen and (max-width: 768px) {
+  .contact-content-text-note {
+    margin-bottom: 38px;
+  }
+}
+.contact-content-text-address {
+  font-family: Myriad;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .contact-content-text-address {
+    margin-bottom: 56px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-content-text {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contact-content-text {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

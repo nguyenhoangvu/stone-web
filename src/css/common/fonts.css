@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: FuturaPT-Demi;
+  src: url('../../font/FuturaPTDemi.otf');
+  font-weight: 500;
+}
+
+@font-face {
   font-family: Myriad;
   src: url('../../font/MYRIADPRO-REGULAR.OTF');
   font-weight: 500;
