@@ -35,6 +35,7 @@ body, html {
 .projects .container .grid-btn {
   right: 11px !important;
   cursor: pointer;
+  display: none;
   position: absolute;
   bottom: 56px;
   right: 0;

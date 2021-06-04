@@ -49,22 +49,23 @@
   </div>
   <div class="container">
     <ul class="grid effect-1" id="grid">
-      <li><img src="../images/Sample-jpg-image-500kb.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
-      <li><img src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/Sample-jpg-image-500kb.jpg"><button class="grid-btn">Restaurant
+          name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
+      <li><img class="grid-img" src="../images/64 - dQMxRzX.jpg"><button class="grid-btn">Restaurant name</button></li>
 
     </ul>
   </div>
@@ -82,6 +83,18 @@
     $('.grid-btn').click(function () {
       let index = $('.grid-btn').index(this)
       location.href = "project-detail.html"
+    })
+    let arr = document.getElementsByClassName('grid-img')
+    $('.grid-img').hover(function () {
+      let index = $('.grid-img').index(this)
+      let test = document.getElementsByClassName('grid-btn')
+      for (let i = 0; i < arr.length; i++) {
+        if (i === index) {
+          $(test[index]).css('display', 'block')
+        } else {
+          $(test[i]).css('display', 'none')
+        }
+      }
     })
   </script>
 </body>
