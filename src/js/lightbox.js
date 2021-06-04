@@ -1,4 +1,15 @@
 var slideIndex = 1;
+let imgs = document.querySelectorAll('.column-image')
+let index
+imgs.forEach(function (check) {
+  check.addEventListener('click', checkIndex);
+})
+
+function checkIndex(event) {
+  index = Array.from(imgs).indexOf(event.target) + 1;
+  currentSlide(index)
+}
+
 showSlides(slideIndex);
 
 function plusSlides(n) {
